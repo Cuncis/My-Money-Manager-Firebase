@@ -20,7 +20,6 @@ import kotlinx.android.synthetic.main.fragment_categories.*
 
 
 class CategoryFragment : Fragment(), CategoryContract.View {
-
     private lateinit var categoryAdapter: CategoryAdapter
     private var categoryList: ArrayList<String> = ArrayList()
     private lateinit var presenter: CategoryPresenter
@@ -82,7 +81,6 @@ class CategoryFragment : Fragment(), CategoryContract.View {
     }
 
     override fun onExpenseResult(dataSnapshot: DataSnapshot) {
-
         categoryList.clear()
 
         for (data in dataSnapshot.children) {
@@ -94,7 +92,6 @@ class CategoryFragment : Fragment(), CategoryContract.View {
     }
 
     override fun onIncomeResult(dataSnapshot: DataSnapshot) {
-
         categoryList.clear()
 
         for (data in dataSnapshot.children) {
@@ -169,6 +166,4 @@ class CategoryFragment : Fragment(), CategoryContract.View {
     override fun showMessage(message: String) {
         Toast.makeText(activity!!, message, Toast.LENGTH_SHORT).show()
     }
-
-
 }
