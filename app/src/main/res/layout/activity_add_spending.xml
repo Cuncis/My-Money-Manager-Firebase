@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.spending.add.AddSpendingActivity"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/parent_linear"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_expense"
+            android:text="Expense"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="end"
+            android:background="@drawable/cell_button_selected"/>
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_income"
+            android:text="Income"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/cell_button_unselected"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:id="@+id/et_date"
+        android:focusableInTouchMode="false"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cell_edit_spending"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/category"
+        android:focusableInTouchMode="false"
+        android:id="@+id/et_category"
+        android:background="@drawable/cell_edit_spending"
+        android:drawableEnd="@drawable/ic_arrow_drop_down"
+        android:padding="10dp"
+        android:layout_marginTop="4dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/amount"
+        android:inputType="numberDecimal"
+        android:id="@+id/et_amount"
+        android:background="@drawable/cell_edit_spending"
+        android:padding="10dp"
+        android:layout_marginTop="4dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/extra_notes"
+        android:inputType="textMultiLine"
+        android:id="@+id/et_extraNotes"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cell_edit_spending"
+        android:padding="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_save"
+        android:text="@string/save"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorAccent"/>
+
+</LinearLayout>

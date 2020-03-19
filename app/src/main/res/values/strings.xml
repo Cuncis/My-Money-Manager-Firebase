@@ -5,4 +5,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="expense">Expense</string>
     <string name="income">Income</string>
+    <string name="_0">0</string>
+    <string name="category">Category</string>
+    <string name="amount">Amount</string>
+    <string name="extra_notes">Extra Notes</string>
+    <string name="save">Save</string>
 </resources>
